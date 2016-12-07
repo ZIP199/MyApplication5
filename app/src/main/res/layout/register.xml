@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="10dp">
 
     <fragment
         android:id="@+id/picture"
@@ -13,12 +13,20 @@
         android:layout_height="wrap_content"
         tools:layout="@layout/fragment_inputcell_picture"></fragment>
 
+
     <fragment
         android:id="@+id/input_account"
         class="com.example.administrator.myapplication.fragment.SimpleTextCellFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        tools:layout="@layout/fragment_inputcell_simpletext"></fragment>
+
+    <fragment
+        android:id="@+id/input_email"
+        class="com.example.administrator.myapplication.fragment.SimpleTextCellFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         tools:layout="@layout/fragment_inputcell_simpletext"></fragment>
 
     <fragment
@@ -34,6 +42,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:layout="@layout/fragment_inputcell_simpletext"></fragment>
+
 
     <LinearLayout
         android:layout_width="match_parent"

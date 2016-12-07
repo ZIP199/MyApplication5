@@ -10,6 +10,7 @@ public class RegisterActivity extends Activity {
     SimpleTextCellFragment fragmentInputCellAcount;
     SimpleTextCellFragment fragmentInputCellPassword;
     SimpleTextCellFragment fragmentInputCellPasswordRepeat;
+    SimpleTextCellFragment fragmentInputCellEmail;
     PictureInputCellFragment pictureInputCellFragment;
 
     @Override
@@ -20,16 +21,19 @@ public class RegisterActivity extends Activity {
         fragmentInputCellPassword= (SimpleTextCellFragment) getFragmentManager().findFragmentById(R.id.input_password);
         fragmentInputCellPasswordRepeat= (SimpleTextCellFragment) getFragmentManager().findFragmentById(R.id.input_twice);
         pictureInputCellFragment=(PictureInputCellFragment)getFragmentManager().findFragmentById(R.id.picture);
+        fragmentInputCellEmail= (SimpleTextCellFragment) getFragmentManager().findFragmentById(R.id.input_email);
     }
     protected void onResume() {
         // TODO Auto-generated method stub
         super.onResume();
-        fragmentInputCellAcount.setLabelText("用 户 名");
+        fragmentInputCellAcount.setLabelText("  用  户  ");
         fragmentInputCellAcount.setHintText("请输入用户名");
-        fragmentInputCellPassword.setLabelText(" 密  码 ");
+        fragmentInputCellPassword.setLabelText("  密  码  ");
         fragmentInputCellPassword.setHintText("请输入密码");
         fragmentInputCellPasswordRepeat.setLabelText("重复密码");
         fragmentInputCellPasswordRepeat.setHintText("请重复输入密码");
+        fragmentInputCellEmail.setLabelText("  邮  箱  ");
+        fragmentInputCellEmail.setHintText("请输入邮箱");
     }
 
 }
